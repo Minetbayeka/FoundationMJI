@@ -212,10 +212,10 @@ if ($action === 'edit' && isset($_GET['id'])) {
                                 <span class="navbar-text me-3">
                                     Welcome, <?php echo htmlspecialchars($_SESSION['full_name'] ?? $_SESSION['username'] ?? 'Admin'); ?>
                                 </span>
-                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2">
+                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2 mb-3 mt-2">
                                     <i class="fas fa-external-link-alt me-1"></i>View Site
                                 </a>
-                                <a href="logout.php" class="btn btn-outline-danger btn-sm">
+                                <a href="logout.php" class="btn btn-outline-danger btn-sm mb-3 mt-2">
                                     <i class="fas fa-sign-out-alt me-1"></i>Logout
                                 </a>
                             </div>
@@ -241,7 +241,7 @@ if ($action === 'edit' && isset($_GET['id'])) {
                                         <p class="text-muted mx-3">No projects found.</p>
                                     <?php else: ?>
                                         <div class="table-responsive">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover mx-2">
                                                 <thead>
                                                     <tr>
                                                         <th>Title</th>

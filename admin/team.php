@@ -215,10 +215,10 @@ if ($action === 'edit' && isset($_GET['id'])) {
                                 <span class="navbar-text me-3">
                                     Welcome, <?php echo htmlspecialchars($_SESSION['full_name'] ?? $_SESSION['username'] ?? 'Admin'); ?>
                                 </span>
-                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2">
+                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2 mb-3 mt-2">
                                     <i class="fas fa-external-link-alt me-1"></i>View Site
                                 </a>
-                                <a href="logout.php" class="btn btn-outline-danger btn-sm">
+                                <a href="logout.php" class="btn btn-outline-danger btn-sm mb-3 mt-2">
                                     <i class="fas fa-sign-out-alt me-1"></i>Logout
                                 </a>
                             </div>

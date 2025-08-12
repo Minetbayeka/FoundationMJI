@@ -189,10 +189,10 @@ try {
                                 <span class="navbar-text me-3">
                                     Welcome, <?php echo htmlspecialchars($_SESSION['full_name'] ?? $_SESSION['username'] ?? 'Admin'); ?>
                                 </span>
-                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2">
+                                <a href="../index.php" class="btn btn-outline-primary btn-sm me-2 mb-3 mt-2">
                                     <i class="fas fa-external-link-alt me-1"></i>View Site
                                 </a>
-                                <a href="logout.php" class="btn btn-outline-danger btn-sm">
+                                <a href="logout.php" class="btn btn-outline-danger btn-sm mb-3 mt-2">
                                     <i class="fas fa-sign-out-alt me-1"></i>Logout
                                 </a>
                             </div>
@@ -339,17 +339,17 @@ try {
                         
                         <!-- Quick Actions -->
                         <div class="row">
-                            <div class="col-12">
-                                <div class="table-card">
+                            <div class="col-12 mx-2">
+                                <div class="table-card ">
                                     <div class="card-header bg-white mx-3">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-1 mt-2">
                                             <i class="fas fa-bolt me-2"></i>Quick Actions
                                         </h5>
                                     </div>
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row mx-2 ">
                                             <div class="col-md-3 mb-3">
-                                                <a href="blog-posts.php?action=new" class="btn btn-primary w-100 mx-3">
+                                                <a href="blog-posts.php?action=new" class="btn btn-primary w-100 ">
                                                     <i class="fas fa-plus me-2"></i>New Blog Post
                                                 </a>
                                             </div>

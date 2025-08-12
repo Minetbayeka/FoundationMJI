@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+
+}
+
+.payment-options .option {
+  flex: 1 1 120px;
+  padding: 12px;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  width: 100%;
+  max-width: 150px;
+}
+
+.payment-options .active {
+  background-color: #ff6c2f;
+  color: #fff;
+  border: none;
+}
+
+.form-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.payment-form {
+  background-color: #F5F5F5;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.form-row label {
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 140px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-row-double {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row-double .form-row {
+  flex: 1 1 100%;
+}
+
+.card-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding-left: 140px;
+  flex-wrap: wrap;
+}
+
+.card-icons img {
+  height: 50px;
+}
+
+.donate-btn1 {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #ff6c2f;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 30%;
+  min-width: 150px;
+}
+
+.donate-btn:hover {
+  background-color: #e2561e;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  .payment-options {
+    justify-content: center;
+  }
+
+  .payment-options .option {
+    flex: 1 1 45%;
+    max-width: none;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row label {
+    min-width: unset;
+  }
+
+  .form-row-double {
+    flex-direction: column;
+  }
+
+  .card-icons {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .donate-btn1 {
+    width: 100%;
+  }
+}
+
+
+
+
+/* sepa */
+
+
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.payment-box {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+} */
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  width: 150px; /* or adjust based on your design */
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.donate-btn:hover {
+  background-color: #e65a12;
+}
+
+.disclaimer {
+  font-size: 13px;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+
+/* paypaly payment */
+
+.payPal-form{
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.payPalButton{
+
+  background-color: #FFC300;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  height: 10vh;
+}
+
+.payPalButton:hover {
+  background-color: #e6b800;
+}
+
+.payPalButton img {
+  height: 60px;
+  vertical-align: middle;
+}
+
+.form-name{
+  display: flex;
+  /* gap: 20px; */
+  margin-bottom: 20px;
+}
+
+/* 
+width: 558;
+height: 50;
+top: 852px;
+left: 403px;
+angle: 0 deg;
+opacity: 1; */

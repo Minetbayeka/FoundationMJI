@@ -1,0 +1,6 @@
+[05-Aug-2025 15:05:15 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.projects' doesn't exist
+[05-Aug-2025 15:05:20 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.team_members' doesn't exist
+[05-Aug-2025 15:06:23 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.projects' doesn't exist
+[05-Aug-2025 15:06:48 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.team_members' doesn't exist
+[05-Aug-2025 15:10:26 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.team_members' doesn't exist
+[05-Aug-2025 15:11:52 UTC] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mjlfoundation_MJCbyCopilot.projects' doesn't exist

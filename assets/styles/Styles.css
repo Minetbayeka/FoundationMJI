@@ -1,0 +1,1091 @@
+/* Reset and Variables */
+:root {
+    --footer-bg-color: #1B3236; 
+    --footer-text-color: #e0e0e0; 
+    --footer-heading-color: #ffffff; 
+    --link-color: #e0e0e0;
+    --link-hover-color: #ffcc00; 
+    --button-bg-color: #ff9900; 
+    --button-text-color: #ffffff;
+    --input-bg-color: #ffffff;
+    --input-text-color: #333333;
+    --primary-color: #0c2a2d;
+    --secondary-color: #ff5e28;
+    --accent-color: #67BDB0;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Navbar Styles */
+
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1.7rem !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+ 
+
+
+.donate-btn {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+
+}
+
+.donate-btn:hover {
+    background-color: #e54d1a !important;
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    min-height: 500px;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-image {
+    background: url('../images/banner4..jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+
+}
+
+.learn-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.learn-btn:hover {
+    background-color: #e54d1a;
+    color: white;
+    text-decoration: none;
+}
+
+/* Vision Section */
+.vission-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.card-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-border.teal {
+    background-color: var(--accent-color);
+}
+
+.card-border.orange {
+    background-color: var(--secondary-color);
+}
+
+/* Mother Jane Section */
+.container {
+    padding: 4rem 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.title p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.card-1 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card-1:hover {
+    transform: translateY(-5px);
+}
+
+.card-1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-1 h3 {
+    margin: 1.5rem 1rem 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.card-1 p {
+    color: var(--text-light);
+    margin: 0 1rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 1rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #e54d1a;
+    color: white;
+    text-decoration: none;
+}
+
+/* About Us Section */
+.container-one {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.base-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay-img {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: 10px solid var(--accent-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-section h1 {
+    color: var(--text-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.text-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.text-section p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #e54d1a;
+}
+
+/* Meet the Visionary */
+.meet-visionary {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.visionary-image {
+    border: 10px solid var(--accent-color);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.meet-visionary h1 {
+    color: var(--text-dark);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.meet-visionary h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+}
+
+.meet-visionary p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a3a3f;
+    color: white;
+}
+
+/* Vision Map */
+.vission {
+    position: relative;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.vission img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.visson-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.visson-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.visson-content p {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Donate Section */
+.donate {
+    position: relative;
+    margin: 4rem 0;
+}
+
+.donate img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.donate-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.donate-content h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.donate-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Mission Section */
+.mission {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.mission h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+.mission .faith {
+    font-size: 1.1rem;
+    margin: 0 auto 3rem;
+    max-width: 700px;
+    text-align: center;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container-mission,
+.container-goal {
+    margin-bottom: 3rem;
+}
+
+.card1 {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-title img {
+    width: 40px;
+    height: 40px;
+}
+
+.card1 h1 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 0;
+}
+
+.card1 p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.volunteer {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.volunteer h1 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.volunteer h2 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.volunteer p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--footer-bg-color);
+    padding: 3rem 0 1rem;
+    color: var(--footer-text-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.site-footer h3 {
+    color: var(--footer-heading-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.site-footer a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.footer-section.about p {
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section.contact p,
+.footer-section.social a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.footer-section.contact i,
+.footer-section.social i {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-newsletter {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer-newsletter h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-newsletter p {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+}
+
+.newsletter-form .input-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    padding: 0.75rem 1rem;
+}
+
+.newsletter-form button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #5aa89b;
+}
+
+/* .border {
+    border-bottom: 2px solid var(--accent-color);
+    width: 100px;
+    margin-bottom: 1.5rem;
+
+} */
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .title h1,
+    .text-section h1,
+    .meet-visionary h2 {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .vission-section {
+        padding: 3rem 0;
+    }
+    
+    .container,
+    .container-one,
+    .meet-visionary {
+        padding: 3rem 0;
+    }
+    
+    .overlay-img {
+        width: 120px;
+        height: 120px;
+        bottom: -15px;
+        right: -15px;
+    }
+    
+    .visionary-image {
+        margin-top: 2rem;
+    }
+    
+    .donate-content h2 {
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    .learn-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .vission-section {
+        padding: 2rem 0;
+         
+    }
+    
+    .card {
+        margin-bottom: 2rem;
+        margin: 0px 10px 0px 10px;
+    }
+    
+    .container,
+    .container-one,
+    .meet-visionary,
+    .mission {
+        padding: 2rem 0;
+
+    }
+    
+    .title h1,
+    .text-section h1,
+    .meet-visionary h2 {
+        font-size: 1.8rem;
+    }
+    
+    .title p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .overlay-img {
+        display: none;
+    }
+    
+    .visionary-image {
+        margin-top: 2rem;
+    }
+    
+    .visson-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 2rem;
+        color: var(--text-dark);
+        
+    }
+
+    .visson-content h1 {
+        font-size: 2rem;
+    }
+    
+    .visson-content p {
+        font-size: 1rem;
+    }
+    
+    .donate-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 2rem;
+        color: var(--text-dark);
+    }
+    
+    .donate-content h1 {
+        font-size: 2rem;
+        color: var(--secondary-color);
+    }
+    
+    .donate-content h2 {
+        font-size: 1.5rem;
+        color: var(--text-dark);
+    }
+    
+    .donate img {
+        height: 40vh;
+    }
+    
+    .mission h1 {
+        font-size: 2rem;
+    }
+    
+    .mission .faith {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .container-mission,
+    .container-goal {
+        margin-bottom: 2rem;
+        
+     
+    }
+
+    
+    .card1 {
+        margin-bottom: 1.5rem;
+       
+    }
+
+    .border {
+        width: 150px;
+        margin: 0rem 0rem 0rem 6.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .volunteer {
+        margin-top: 2rem;
+    }
+    
+    .site-footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-section {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .footer-section.contact p,
+    .footer-section.social a {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .tagline {
+        font-size: 0.8rem;
+    }
+    
+    .learn-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+    
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .title h1,
+    .text-section h1,
+    .meet-visionary h2 {
+        font-size: 1.5rem;
+    }
+
+    .row{
+         margin: 0px 10px 0px 10px;
+    }
+    
+    .text-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .donate-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .donate-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .mission h1 {
+        font-size: 1.5rem;
+    }
+  
+    .card1 h1 {
+        font-size: 1.3rem;
+    }
+    
+    .volunteer h1 {
+        font-size: 1.5rem;
+    }
+    
+    .volunteer h2 {
+        font-size: 1.1rem;
+    }
+    
+    .site-footer {
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .footer-newsletter {
+        margin-bottom: 1.5rem;
+    }
+    
+    .border {
+        width: 150px;
+        margin-left: 6.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsletter-form .input-group {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input[type="email"] {
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter-form button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.py-5 {
+    padding: 3rem 0;
+}
+
+.px-3 {
+    padding: 0 1rem;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .donate-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+     .navbar-nav {
+        gap: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    } 
+}
+
+

@@ -79,7 +79,7 @@ try {
                                     </div>
                                 </div>
                                 <a href="project-detail.php?slug=<?php echo htmlspecialchars($project['slug']); ?>" 
-                                   class="btn btn-primary w-100">
+                                   class="btn btn-primary  w-100">
                                     Learn More
                                 </a>
                             </div>
@@ -162,7 +162,7 @@ try {
                     <i class="fas fa-heart me-2"></i>Donate Now
                 </a>
                 <a href="get-involved.php" class="btn btn-outline-primary btn-lg">
-                    <i class="fas fa-hands-helping me-2"></i>Get Involved
+                    <i class="fas fa-hands-helping me-2" ></i>Get Involved
                 </a>
             </div>
         </div>

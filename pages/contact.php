@@ -60,21 +60,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="contact-item mb-3">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <i class="fas fa-map-marker-alt text-primary me-3 text-black"></i>
                             <span>Mankon - Bamenda, Cameroon</span>
                         </div>
                     </div>
                     
                     <div class="contact-item mb-3">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-phone text-primary me-3"></i>
+                            <i class="fas fa-phone text-primary me-3 text-black"></i>
                             <span>+237 6 79367828</span>
                         </div>
                     </div>
                     
                     <div class="contact-item mb-4">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <i class="fas fa-envelope text-primary me-3 text-black"></i>
                             <a href="mailto:contact@mjlegacyfoundation.org">contact@mjlegacyfoundation.org</a>
                         </div>
                     </div>
@@ -83,9 +83,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="social-links">
                         <h5 class="mb-3">Follow Us</h5>
                         <div class="d-flex gap-3">
-                            <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-outline-primary"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-primary text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-primary text-white"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

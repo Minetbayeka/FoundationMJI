@@ -229,6 +229,7 @@ include '../includes/header.php';
     border-color: var(--accent-color);
 }
 
+
 @media (max-width: 768px) {
     .card-img-top {
         height: 200px;

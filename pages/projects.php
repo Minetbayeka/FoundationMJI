@@ -79,7 +79,7 @@ try {
                                     </div>
                                 </div>
                                 <a href="project-detail.php?slug=<?php echo htmlspecialchars($project['slug']); ?>" 
-                                   class="btn btn-primary w-100">
+                                   class="btn btn-primary w-100 text-white">
                                     Learn More
                                 </a>
                             </div>
@@ -139,7 +139,7 @@ try {
                                     </div>
                                 </div>
                                 <a href="project-detail.php?slug=<?php echo htmlspecialchars($project['slug']); ?>" 
-                                   class="btn btn-outline-primary w-100">
+                                   class="btn btn-outline-primary w-100 text-white">
                                     View Details
                                 </a>
                             </div>
@@ -159,10 +159,10 @@ try {
                 <h3>Want to Support Our Projects?</h3>
                 <p class="lead mb-4">Your donation can make a real difference in the lives of vulnerable children and communities.</p>
                 <a href="../features/donations/donation.php" class="btn btn-primary btn-lg me-3">
-                    <i class="fas fa-heart me-2"></i>Donate Now
+                    <i class="fas fa-heart me-2" style="color:#ff5e28"></i>Donate Now
                 </a>
                 <a href="get-involved.php" class="btn btn-outline-primary btn-lg">
-                    <i class="fas fa-hands-helping me-2"></i>Get Involved
+                    <i class="fas fa-hands-helping me-2 " style="color:#ff5e28"></i>Get Involved
                 </a>
             </div>
         </div>

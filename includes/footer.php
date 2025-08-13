@@ -18,7 +18,7 @@
                         <form class="newsletter-form" method="POST" action="<?php echo SITE_URL; ?>/includes/newsletter-subscribe.php">
                             <div class="input-group">
                                 <input type="email" class="form-control" placeholder="Your Email" name="email" required>
-                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                                <button type="submit" class="btn btn-primary ">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             
-            <div class="footer-bottom text-center">
+            <div class="footer-bottom text-center mx-2">
                 <p>&copy; <?php echo date('Y'); ?> Mother Jane Legacy Foundation - All Rights Reserved.</p>
             </div>
         </div>

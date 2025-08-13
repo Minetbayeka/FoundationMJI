@@ -210,13 +210,13 @@ try {
 <section class="donate">
     <div class="container">
         <div class="position-relative">
-            <img src="../assets/images/donate.jpg" alt="Donation" class="img-fluid">
+            <img src="../assets/images/donate.jpg" alt="Donation" class="img-fluid" style="width: 100%;">
             <div class="donate-content">
                 <h1><i class="fas fa-heart"></i></h1>
                 <h2>Be of help to the helpless</h2>
                 <a href="../features/donations/donation.php" class="btn">Donate Now</a>
             </div>
-        </div>
+        </div> 
     </div>
 </section>
 

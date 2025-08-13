@@ -80,6 +80,8 @@
 
 }
 
+
+
 @media (max-width: 575.98px) {
   .donate-btn {
     display: block;
@@ -115,7 +117,7 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="<?php echo SITE_URL; ?>">Home</a></li>
+            <li class="nav-item"><a class="nav-link"  href="<?php echo SITE_URL; ?>">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo SITE_URL; ?>/pages/about.php">About</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo SITE_URL; ?>/pages/projects.php">Projects</a></li>
             <li class="nav-item"><a class="nav-link" style="color:red" href="<?php echo SITE_URL; ?>/pages/blog.php">Blog</a></li>

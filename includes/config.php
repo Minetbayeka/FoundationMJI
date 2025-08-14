@@ -1,15 +1,15 @@
 <?php
-// // Database configuration
-// define('DB_HOST', 'localhost');
-// define('DB_USER', 'mjlfoundation_MJCbyCopilot');
-// define('DB_PASS', 'MJCbyCopilot');
-// define('DB_NAME', 'mjlfoundation_MJCbyCopilot');
-
-
+// Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'mjl_foundation');
+define('DB_USER', 'mjlfoundation_MJCbyCopilot');
+define('DB_PASS', 'MJCbyCopilot');
+define('DB_NAME', 'mjlfoundation_MJCbyCopilot');
+
+
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PASS', '');
+// define('DB_NAME', 'mjl_foundation');
 
 // Create database connection
 try {
@@ -21,8 +21,8 @@ try {
 
 // Site configuration
 define('SITE_NAME', 'Mother Jane Legacy Foundation');
-// define('SITE_URL', 'https://mjl-foundation.org/');
-define('SITE_URL', 'http://localhost/foundation');
+define('SITE_URL', 'https://mjl-foundation.org/');
+// define('SITE_URL', 'http://localhost/foundation');
 define('ADMIN_EMAIL', 'admin@mjlegacyfoundation.org');
 
 // Session configuration

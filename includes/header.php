@@ -60,7 +60,9 @@
        color:red
     }
 
-    #navbarToggler {
+  
+
+  #navbarToggler {
   display: none;
   margin-right: 6px;
 }
@@ -79,6 +81,7 @@
   }
 
 }
+
 
 
 

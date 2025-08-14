@@ -218,7 +218,7 @@ if ($action === 'edit' && isset($_GET['id'])) {
                                 <a href="../index.php" class="btn btn-outline-primary btn-sm me-2">
                                     <i class="fas fa-external-link-alt me-1"></i>View Site
                                 </a>
-                                <a href="logout.php" class="btn btn-outline-danger btn-sm">
+                                <a href="logout.php" class="btn btn-outline-danger btn-sm ">
                                     <i class="fas fa-sign-out-alt me-1"></i>Logout
                                 </a>
                             </div>
